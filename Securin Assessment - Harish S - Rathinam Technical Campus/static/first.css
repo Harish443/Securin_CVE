@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  h2 {
+    text-align: center;
+    color: black;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  .pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end; /* Align to the right */
+    
+  }
+  .pagination button, .pagination a, .apply-btn {
+    padding: 8px 16px;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black; /* Text color for general buttons */
+  }
+  .pagination button.prev, .pagination button.next, .apply-btn {
+    background-color: grey; /* Background color for general buttons */
+    color: black; /* Text color for general buttons */
+  }
+  .pagination a.page {
+    background-color: white; /* Background color for page links */
+    color: white; /* Text color for page links */
+  }
+  .pagination a.page:hover {
+    background-color: #d7559e; /* Hover background color for page links */
+  }
+  .clickable {
+    cursor: pointer;
+    text-decoration: underline;
+    color: white; /* Text color for CVE ID and other text */
+  }
+  .clickable:hover {
+    color: #d7559e; /* Hover text color for CVE ID and other text */
+  }

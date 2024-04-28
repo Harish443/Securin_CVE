@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/first.css">
+  <title>CVE List</title>
+</head>
+<body>
+
+<h2>CVE List</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>CVE ID</th>
+      <th>Identifier</th>
+      <th>Published Date</th>
+      <th>Last Modified Date</th>
+      <th>Vulnerability Status</th>
+    </tr>
+  </thead>
+  <tbody id="cveTableBody">
+    <!-- Data rows will be dynamically added here -->
+  </tbody>
+</table>
+<div class="pagination">
+  <button class="prev" id="prevPageBtn" onclick="prevPage()" disabled>Previous Page</button>
+  <span>Page <span id="currentPage">1</span> of <span id="totalPages">1</span></span>
+  <button class="next" id="nextPageBtn" onclick="nextPage()">Next Page</button>
+</div>
+
+<div>
+  <label for="resultsPerPage">Results Per Page:</label>
+  <select id="resultsPerPage" onchange="changeResultsPerPage()">
+    <option value="10">10</option>
+    <option value="50">50</option>
+    <option value="100">100</option>
+  </select>
+</div>
+<script src="/static/first.js"></script>
+</body>
+</html>
